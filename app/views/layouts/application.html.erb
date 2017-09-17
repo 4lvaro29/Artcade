@@ -16,12 +16,7 @@
 </head>
 
 <body>
-  <%= render 'shared/navbar' %>
-  <% if user_signed_in? %>
-  <ul>
-    <li> <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %></li>
-  </ul>
-  <% end %>    
+  <%= render 'shared/navbar' %> 
   <% if notice.present? %>
   <div class="alert alert-success" role="alert">
     <%= notice %>

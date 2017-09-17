@@ -5,8 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
 12.times do	|i|
-	Product.create(
+	Product.create!(
 		name: Faker::Commerce.product_name,
 		price: Faker::Commerce.price.to_i,
 		photo: "http://lorempixel.com/400/200/technics/#{i + 1}/")

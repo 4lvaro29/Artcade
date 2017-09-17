@@ -7,7 +7,7 @@ class OrdersController < ApplicationController
   	if @order.save
   		redirect_to products_path, notice: "La orden ha sido ingresada"
   	else
-  		redirect_to products_path, alert: "La orden no ha podido ser ingresada"
+  		redirect_to products_path, alert: "La orden no ha podido ser ingresada, debes registrarte"
   	end
   end	
   
