@@ -1,6 +1,8 @@
+<div class="container">
 <table class="table">
 	<% @orders.each do |order| %>
 	<tr>
+		<td><%= order.product.photo %></td>
 		<td> <%= order.product.name %> </td>
 		<td> <%= order.product.price %> </td>
 	</tr>
@@ -10,6 +12,6 @@
 		<td> <%= @orders.map{|order| order.product.price}.sum %> </td>
 	</tr>
 </table>
-
+</div>
 
 
